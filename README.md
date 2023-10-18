@@ -1,4 +1,4 @@
-# Flutter E-Commerce App test
+# Adding Flutter Animations to the E-commerce App's Home Page" 🛒📲💫
 
 ![Screenshot 2023-10-18 at 11 22 03 AM](https://github.com/AmirBayat0/Flutter-E-Commerce-app-test/assets/91388754/cf5f7e3f-fda9-4cca-9e08-a036dbafda02)
 ![Screenshot 2023-10-18 at 11 21 36 AM](https://github.com/AmirBayat0/Flutter-E-Commerce-app-test/assets/91388754/7ae839d5-af31-46b3-a8e0-4fa36edb837a)
