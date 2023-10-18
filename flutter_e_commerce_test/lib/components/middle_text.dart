@@ -1,21 +1,16 @@
 import 'package:flutter/material.dart';
-
-import '../utils/strings.dart';
+import 'package:flutter_e_commerce_test/utils/strings.dart';
 
 class MiddleText extends StatelessWidget {
-  const MiddleText(
-      {Key? key,
-      required this.textTheme,
-      required this.text,
-      required this.delay})
+  const MiddleText({Key? key, required this.text, required this.delay})
       : super(key: key);
 
-  final TextTheme textTheme;
   final String text;
   final double delay;
 
   @override
   Widget build(BuildContext context) {
+    var textTheme = Theme.of(context).textTheme;
     return Column(
       children: [
         Row(
@@ -23,14 +18,14 @@ class MiddleText extends StatelessWidget {
           children: [
             Text(
               text,
-              style: textTheme.headline2,
+              style: textTheme.displayMedium,
             ),
             Expanded(child: Container()),
             Row(
               children: [
                 Text(
                   MyStrings.viewAllText,
-                  style: textTheme.headline3,
+                  style: textTheme.displaySmall,
                 ),
                 const SizedBox(
                   width: 5,

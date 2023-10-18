@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_e_commerce_test/view/splash.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-///
-import '../view/splash.dart';
+//
+// Created by CodeWithFlexZ
+// Tutorials on my YouTube
+//
+//! Instagram
+//! @CodeWithFlexZ
+//
+//? GitHub
+//? AmirBayat0
+//
+//* YouTube
+//* Programming with FlexZ
+//
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.deepPurpleAccent,
-    statusBarIconBrightness: Brightness.light,
-  ));
   runApp(const MyApp());
 }
 
@@ -22,19 +30,37 @@ class MyApp extends StatelessWidget {
       title: 'Flutter E-Commerce app test',
       home: const SplashScreen(),
       theme: ThemeData(
-        textTheme: const TextTheme(
-          headline1: TextStyle(
-              color: Colors.white, fontSize: 20, fontWeight: FontWeight.normal),
-          headline2: TextStyle(
-              color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
-          headline3: TextStyle(
-              color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w400),
-          headline4: TextStyle(
-              color: Colors.black, fontSize: 15, fontWeight: FontWeight.w300),
-          headline5: TextStyle(
-              color: Colors.black, fontSize: 15, fontWeight: FontWeight.w300),
-          headline6: TextStyle(
-              color: Colors.grey, fontSize: 16, fontWeight: FontWeight.w400),
+        textTheme: TextTheme(
+          displayLarge: GoogleFonts.roboto(
+            color: Colors.white,
+            fontSize: 23,
+            fontWeight: FontWeight.normal,
+          ),
+          displayMedium: GoogleFonts.roboto(
+            color: Colors.black,
+            fontSize: 19,
+            fontWeight: FontWeight.bold,
+          ),
+          displaySmall: GoogleFonts.roboto(
+            color: Colors.grey,
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+          ),
+          headlineMedium: GoogleFonts.roboto(
+            color: Colors.black,
+            fontSize: 15,
+            fontWeight: FontWeight.w400,
+          ),
+          headlineSmall: GoogleFonts.roboto(
+            color: Colors.black,
+            fontSize: 15,
+            fontWeight: FontWeight.w400,
+          ),
+          titleLarge: GoogleFonts.roboto(
+            color: Colors.grey,
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
+          ),
         ),
       ),
     );

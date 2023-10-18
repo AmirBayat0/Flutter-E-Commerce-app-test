@@ -1,6 +1,5 @@
 import 'package:flutter_e_commerce_test/gen/assets.gen.dart';
-
-import '../model/model.dart';
+import 'package:flutter_e_commerce_test/model/model.dart';
 
 /// Offers List
 List<String> offersList = [
@@ -17,7 +16,7 @@ List<String> offersList = [
 /// Categories List
 List<Categories> categoriesList = [
   Categories(title: "Mens", img: Assets.images.mens.path),
-  Categories(title: "Womens", img: Assets.images.womens.path),
+  Categories(title: "Women", img: Assets.images.womens.path),
   Categories(title: "Kids", img: Assets.images.kids.path),
   Categories(title: "Shoes", img: Assets.images.shoes.path),
   Categories(title: "Bags", img: Assets.images.bags.path),
@@ -37,7 +36,7 @@ List<Products> hotProductList = [
   Products(title: "T-shirt", img: Assets.images.tShirt.path, price: 70),
 ];
 
-/// Feattured List
+/// Featured List
 List<Products> featuredList = [
   Products(title: "Sunglasses", img: Assets.images.glass.path, price: 230),
   Products(title: "Sweater", img: Assets.images.sw.path, price: 67),
@@ -48,7 +47,6 @@ List<Products> featuredList = [
   Products(title: "Shirt", img: Assets.images.shirt.path, price: 100),
   Products(title: "Box", img: Assets.images.box.path, price: 105),
 ];
-
 
 /// Best for Customer List
 List<Products> bestsForCustomerList = [

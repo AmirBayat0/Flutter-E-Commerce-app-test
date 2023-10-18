@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_e_commerce_test/view/main_screen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-
-///
-import '../gen/assets.gen.dart';
-import '../view/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -25,7 +22,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
+      backgroundColor: Colors.deepPurpleAccent,
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,
@@ -36,17 +34,17 @@ class _SplashScreenState extends State<SplashScreen> {
               width: 300,
               height: 300,
               child: Image(
-                image: AssetImage(Assets.images.splash.path),
+                image: AssetImage('assets/images/online-shop.png'),
               ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 25,
             ),
-            const SizedBox(
+            SizedBox(
               width: double.infinity,
-              child: SpinKitWave(
-                color: Colors.blue,
-                size: 30.0,
+              child: SpinKitDoubleBounce(
+                color: Colors.white,
+                size: 50.0,
               ),
             )
           ],
